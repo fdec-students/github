@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Count</title>
+  <script>
+    function countStudents() {
+      // Get the input value
+      var presentCount = document.getElementById("presentCount").value;
+      
+      // Display the count in the result area
+      document.getElementById("result").innerText = "Number of students present: " + presentCount;
+    }
+  </script>
+</head>
+<body>
+  <h1>Student Count</h1>
+  <label for="presentCount">Enter the number of students present:</label>
+  <input type="number" id="presentCount">
+  <button onclick="countStudents()">Count</button>
+  <div id="result"></div>
+</body>
+</html>
+
